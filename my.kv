@@ -1,0 +1,29 @@
+<MenuButton@Button>:
+<STV_Home>:
+	BoxLayout:
+		ScrollView:
+			GridLayout:
+				cols:1
+				size_hint_y:None
+				row_default_height: root.height*0.3
+				height: self.minimum_height
+				
+				BoxLayout:
+					size_hint_y: 0.05
+					ScrollView:
+						GridLayout:
+							rows:1
+							size_hint_x: None
+							col_default_width: root.width*0.3
+							width: self.minimum_width
+							MenuButton:
+								text: root.menuHome
+							MenuButton:
+								text: 'Kênh Thế Giới'
+							MenuButton:
+								text: 'Tìm Truyện'
+							MenuButton:
+								text: 'Diễn Đàn'
+				Button:
+				Button:
+				Button:
